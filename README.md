@@ -41,7 +41,7 @@
 
 ### Compile Project
 
-build - build dist folder
+build - build dist folder\
 build:watch - build dist folder and watch for changes
 
 Usage
