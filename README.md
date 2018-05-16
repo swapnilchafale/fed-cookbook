@@ -70,7 +70,7 @@ Only edit files on **self service** folder:
 * variables [D] - sass variables
 * widgets [D] - page specific styles (**consider renaming to pages instead**)
 
-inclusion files (located inside self service root):
+**inclusion files (located inside self service root):**
 \_components.scss, \_elements.scss, \_mixins.scss, \_utils.scss, \_variables.scss, \_widgets.scss
 
 ### HTML Folder
