@@ -63,7 +63,7 @@
 
 ### Grid
 
-### Page Sturcture
+### Page Structure
 
 ```html
 <!doctype html>
@@ -334,14 +334,14 @@ If you must use an ID selector in the first place (and you should really try not
 
 A mobile-first approach to styling means that styles are applied first to mobile devices. Advanced styles and other overrides for larger screens are then added into the stylesheet via media queries.
 
-```css
+```scss
 // This applies from 0px to $screen-xs (480px)
 body {
     background: red;
 }
 ```
 
-```css
+```scss
 // This applies from $screen-xs (480px) onwards
 @media (min-width: $screen-xs) {
     body {
@@ -364,7 +364,7 @@ We use the following media queries to create the key breakpoints in our grid sys
 Use media queries at the end of your Sass file.
 
 **Bad**
-```css
+```scss
 .item {
     padding: 26px;
     
@@ -375,7 +375,7 @@ Use media queries at the end of your Sass file.
 ```
 
 **Good**
-```css
+```scss
 .item {
     padding: 26px;
 }
