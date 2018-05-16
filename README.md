@@ -60,11 +60,20 @@ npm run build:watch
 
 ### Sass Folder
 
-...
+**base** folder is part of [Digital Experience Style Base](#digital-experience-style-base) - **Do not edit files in this folder** only on **self service**
+
+* components - components styles
+* elements - elements styles
+* mixins - mixins
+* utils - utility styles
+* variables - sass variables
+* widgets - page specific styles (**consider renaming to pages instead**)
 
 ### HTML Folder
 
-...
+* pages - complete pages including layout and built from components and elements
+* components - complex components, such as: cart, forms, etc.
+* elements - small reusable components, such: buttons, checkboxes, radio buttons, switch, etc.
 
 ### Digital Experience Style Base
 
