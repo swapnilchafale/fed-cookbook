@@ -330,7 +330,7 @@ Use media queries at the end of your Sass file.
 ...
 
 @media screen and (min-width: $screen-md) {
-    .item{
+    .item {
         padding: 10px;
     }
 }
