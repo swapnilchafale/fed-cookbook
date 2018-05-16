@@ -35,6 +35,8 @@
 
 ## Introduction
 
+Welcome to Amdocs front end cook book.
+
 ### Installation
 
 1. Clone git
@@ -59,14 +61,14 @@ npm run build:watch
 * Use Dashes
 * Don't use camelCase or PascalCase
 
-**Bad:**\
+**Bad:**
 
 ```
 createCustomer.html
 _CreateCustomer.scss
 ```
 
-**Good:**\
+**Good:**
 
 ```
 create-customer.html
@@ -78,12 +80,12 @@ _create-customer.scss
 **base** folder is part of [Digital Experience Style Base](#digital-experience-style-base) - **Do not edit files in this folder**\
 Only edit files on **self service** folder:
 
-* components [D] - components styles
-* elements [D] - elements styles
-* mixins [D] - mixins
-* utils [D] - utility styles
-* variables [D] - sass variables
-* widgets [D] - page specific styles (**consider renaming to pages instead**)
+* components - components styles
+* elements - elements styles
+* mixins - mixins
+* utils - utility styles
+* variables - sass variables
+* widgets - page specific styles (**consider renaming to pages instead**)
 
 **inclusion files (located inside self service root):**\
 \_components.scss, \_elements.scss, \_mixins.scss, \_utils.scss, \_variables.scss, \_widgets.scss
