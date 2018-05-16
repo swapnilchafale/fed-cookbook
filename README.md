@@ -301,10 +301,10 @@ body {
 
 We use the following media queries to create the key breakpoints in our grid system.
 
-@media only screen and (min-width: $screen-xs) { ... }
-@media only screen and (min-width: $screen-sm) { ... }
-@media only screen and (min-width: $screen-md) { ... }
-@media only screen and (min-width: $screen-lg) { ... }
+@media only screen and (min-width: $screen-xs) { ... }\
+@media only screen and (min-width: $screen-sm) { ... }\
+@media only screen and (min-width: $screen-md) { ... }\
+@media only screen and (min-width: $screen-lg) { ... }\
 
 ### Media Queries Ordering
 
