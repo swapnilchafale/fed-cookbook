@@ -12,7 +12,7 @@
     - [Digital Experience Style Base](#digital-experience-style-base)
 1. [HTML](#html)
     - [Grid](#grid)
-    - [Page Structure](#page-structure)
+    - [New Page Template](#new-page-template)
 1. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
@@ -109,7 +109,7 @@ Our grid system was forked from bootstrap 3 and uses the same classes for page l
 </div>
 ```
 
-### Page Structure
+### New Page Template
 
 * All pages need to include ```.ds-frame``` on the root element.
 * Directly bellow ```.ds-frame``` we add a ```.ds-frame-content```
