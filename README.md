@@ -56,7 +56,22 @@ npm run build:watch
 
 ### File Naming
 
-...
+* Use Dashes
+* Don't use camelCase or PascalCase
+
+**Bad:**\
+
+```
+createCustomer.html
+_CreateCustomer.scss
+```
+
+**Good:**\
+
+```
+create-customer.html
+_create-customer.scss
+```
 
 ### Sass Folder
 
