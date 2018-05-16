@@ -75,6 +75,38 @@ npm run build:watch
 
 ### Grid
 
+Our grid system was forked from bootstrap 3 and uses the same classes for page layout.
+
+* Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
+* Use rows to create horizontal groups of columns.
+* Content should be placed within columns, and only columns may be immediate children of rows.
+* Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.
+* Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.
+* The negative margin is why the examples below are outdented. It's so that content within grid columns is lined up with non-grid content.
+* Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three .col-xs-4.
+* If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
+* Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any .col-md-* class to an element will not only affect its styling on medium devices but also on large devices if a .col-lg-* class is not present.
+
+Avaliable classes:
+
+- .col-xs-1, .col-xs-2, .col-xs-3, ..., .col-xs-12
+- .col-sm-1, .col-sm-2, .col-sm-3, ..., .col-sm-12
+- .col-md-1, .col-md-2, .col-md-3, ..., .col-md-12
+- .col-lg-1, .col-lg-2, .col-lg-3, ..., .col-lg-12
+
+Example:
+
+```html
+<div class="container">
+    <section class="row">
+        <article class="col-md-6 col-lg-3">...</article>
+        <article class="col-md-6 col-lg-3">...</article>
+        <article class="col-md-6 col-lg-3">...</article>
+        <article class="col-md-6 col-lg-3">...</article>
+    </section>
+</div>
+```
+
 ### Page Structure
 
 ```html
