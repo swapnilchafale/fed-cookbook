@@ -69,8 +69,8 @@ Finally, properties are what give the selected elements of a rule declaration th
 
 * Use hards tabs (4 spaces) for indentation
 * Use [BEM methodology](#bem)
-* Use dashes in class names
-* Do not use camelCasing in class names
+* Prefer dashes over camelCasing in class names.
+  * Underscores and PascalCasing are okay if you are using BEM (see OOCSS and BEM below).
 * Do not use ID selectors
 * Avoid attaching classes to elements in your stylesheet (i.e. don’t do div.header or h1.title)
 * When using multiple selectors in a rule declaration, give each selector its own line.
