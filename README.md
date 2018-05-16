@@ -4,6 +4,7 @@
 
 1. [Introduction](#introduction)
     - [Installation](#installation)
+    - [Compile](#compile-project)
 1. [Folder Structure](#folder-structure)
     - [File Naming](#file-naming)
     - [Sass](#sass-folder)
@@ -35,7 +36,18 @@
 
 ### Installation
 
-...
+1. Clone git
+2. Run "npm install" from "digital-style-l9" folder to install project dependencies
+
+### Compile Project
+
+build - build dist folder
+build:watch - build dist folder and watch for changes
+
+Usage
+```sh
+npm run build:watch
+```
 
 **[⬆ back to top](#table-of-contents)**
 
