@@ -1,4 +1,4 @@
-# Airbnb CSS / Sass Styleguide
+# CSS / Sass Styleguide
 
 *A mostly reasonable approach to CSS and Sass*
 
@@ -22,8 +22,6 @@
     - [Mixins](#mixins)
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
-1. [Translation](#translation)
-1. [License](#license)
 
 ## Terminology
 
