@@ -81,7 +81,7 @@ Our grid system was forked from bootstrap 3 and uses the same classes for page l
 * Use rows to create horizontal groups of columns.
 * Content should be placed within columns, and only columns may be immediate children of rows.
 * Predefined grid classes like ```.row``` and ```.col-xs-4``` are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.
-* Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on .rows.
+* Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on ```.row```s.
 * The negative margin is why the examples below are outdented. It's so that content within grid columns is lined up with non-grid content.
 * Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three ```.col-xs-4```.
 * If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
