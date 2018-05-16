@@ -253,7 +253,7 @@ Use `0` instead of `none` to specify that a style has no border.
     List all standard property declarations, anything that isn't an `@include` or a nested selector.
 
     ```scss
-    .btn-green {
+    .btn--green {
       background: green;
       font-weight: bold;
       // ...
@@ -265,7 +265,7 @@ Use `0` instead of `none` to specify that a style has no border.
     Grouping `@include`s at the end makes it easier to read the entire selector.
 
     ```scss
-    .btn-green {
+    .btn--green {
       background: green;
       font-weight: bold;
       @include transition(background 0.5s ease);
