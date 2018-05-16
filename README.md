@@ -87,7 +87,7 @@ Our grid system was forked from bootstrap 3 and uses the same classes for page l
 * If more than 12 columns are placed within a single row, each group of extra columns will, as one unit, wrap onto a new line.
 * Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, e.g. applying any ```.col-md-*``` class to an element will not only affect its styling on medium devices but also on large devices if a ```.col-lg-*``` class is not present.
 
-Avaliable classes:
+**Avaliable classes:**
 
 - ```.container```
 - ```.row```
@@ -96,7 +96,7 @@ Avaliable classes:
 - ```.col-md-1```, ```.col-md-2```, ```.col-md-3```, ..., ```.col-md-12```
 - ```.col-lg-1```, ```.col-lg-2```, ```.col-lg-3```, ..., ```.col-lg-12```
 
-Example:
+**Example:**
 
 ```html
 <div class="container">
