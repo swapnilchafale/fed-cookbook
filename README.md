@@ -261,7 +261,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: none;
+    border: none;
 }
 ```
 
@@ -269,9 +269,73 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ```css
 .foo {
-  border: 0;
+      border: 0;
 }
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Responsive
+
+### Mobile First
+
+A mobile-first approach to styling means that styles are applied first to mobile devices. Advanced styles and other overrides for larger screens are then added into the stylesheet via media queries.
+
+```css
+// This applies from 0px to $screen-xs (480px)
+body {
+    background: red;
+}
+```
+
+```css
+// This applies from $screen-xs (480px) onwards
+@media (min-width: $screen-xs) {
+    body {
+        background: green;
+    }
+}
+```
+
+### Break Points
+
+We use the following media queries to create the key breakpoints in our grid system.
+
+@media only screen and (min-width: $screen-xs) { ... }
+@media only screen and (min-width: $screen-sm) { ... }
+@media only screen and (min-width: $screen-md) { ... }
+@media only screen and (min-width: $screen-lg) { ... }
+
+### Media Queries Ordering
+
+Use media queries at the end of your Sass file.
+
+**Bad**
+```css
+.item {
+    padding: 26px;
+    
+    @media screen and (min-width: $screen-md) {
+        padding: 10px;
+    }
+}
+```
+
+**Good**
+```css
+.item {
+    padding: 26px;
+}
+
+...
+
+@media screen and (min-width: $screen-md) {
+    .item{
+        padding: 10px;
+    }
+}
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Sass
