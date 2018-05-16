@@ -60,14 +60,15 @@ npm run build:watch
 
 ### Sass Folder
 
-**base** folder is part of [Digital Experience Style Base](#digital-experience-style-base) - **Do not edit files in this folder** only on **self service**
+**base** folder is part of [Digital Experience Style Base](#digital-experience-style-base) - **Do not edit files in this folder**\
+Only edit files on **self service** folder:
 
-* components - components styles
-* elements - elements styles
-* mixins - mixins
-* utils - utility styles
-* variables - sass variables
-* widgets - page specific styles (**consider renaming to pages instead**)
+* components [D] - components styles
+* elements [D] - elements styles
+* mixins [D] - mixins
+* utils [D] - utility styles
+* variables [D] - sass variables
+* widgets [D] - page specific styles (**consider renaming to pages instead**)
 
 ### HTML Folder
 
