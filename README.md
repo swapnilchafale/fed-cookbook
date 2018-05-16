@@ -111,35 +111,22 @@ Our grid system was forked from bootstrap 3 and uses the same classes for page l
 
 ### Page Structure
 
+* All pages need to include ```.ds-frame``` on the root element.
+* Directly bellow ```.ds-frame``` we add a ```.ds-frame-content```
+* Your custom page code goes inside ```.ds-frame-content``` 
+
 ```html
-<!doctype html>
-<html>
-<head>
-</head>
 <body>
     <section class="ds-frame">
-
         <div class="ds-frame-content">
             <!-- PLACEHOLDER FOR THE HEADER -->
 
-            <!-- PLACEHOLDER FOR THE WIDGET -->
-            <div class="ds-footer-new"></div>
-        </div>
-
-        <div class="ds-ctc-placeholder">
-            <button class="ds-btn ds-btn--large">CTCPlaceholder</button>
-        </div>
-
-        <div class="ds-tobi">
-            <div class="ds-tobi__wrapper">
-                <div class="ds-tobi__media"></div>
-            </div>
+            <!-- YOUR CODE GOES HERE -->
         </div>
 
         <!-- PLACEHOLDER FOR THE FOOTER -->
     </section>
 </body>
-</html>
 ```
 
 (**Todo:** Update classes to match guidelines)
