@@ -1,10 +1,13 @@
-# CSS / Sass Styleguide
-
-*A mostly reasonable approach to CSS and Sass*
+# Frontend Cookbook
 
 ## Table of Contents
 
-1. [Terminology](#terminology)
+1. [Introduction](#introduction)
+    - [TBA](#introduction)
+1. [HTML](#html)
+    - [Grid](#grid)
+    - [Page Structure](#page-structure)
+1. [CSS Terminology](#css-terminology)
     - [Rule Declaration](#rule-declaration)
     - [Selectors](#selectors)
     - [Properties](#properties)
@@ -22,8 +25,49 @@
     - [Mixins](#mixins)
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
+1. [Folder Structure](#folder-structure)
+    - [TBA](#folder-structure)
 
-## Terminology
+## Introduction
+
+## HTML
+
+### Grid
+
+### Page Sturcture
+
+```html
+<!doctype html>
+<html>
+<head>
+</head>
+<body>
+    <section class="ds-frame">
+    
+        <div class="ds-frame-content">
+            <!-- PLACEHOLDER FOR THE HEADER -->
+
+            <!-- PLACEHOLDER FOR THE WIDGET -->
+            <div class="ds-footer-new"></div>
+        </div>
+
+        <div class="ds-ctc-placeholder">
+            <button class="ds-btn ds-btn--large">CTCPlaceholder</button>
+        </div>
+
+        <div class="ds-tobi">
+            <div class="ds-tobi__wrapper">
+                <div class="ds-tobi__media"></div>
+            </div>
+        </div>
+
+        <!-- PLACEHOLDER FOR THE FOOTER -->
+    </section>
+</body>
+</html>
+```
+
+## CSS Terminology
 
 ### Rule declaration
 
@@ -289,3 +333,6 @@ Again: **never nest ID selectors!**
 If you must use an ID selector in the first place (and you should really try not to), they should never be nested. If you find yourself doing this, you need to revisit your markup, or figure out why such strong specificity is needed. If you are writing well formed HTML and CSS, you should **never** need to do this.
 
 **[⬆ back to top](#table-of-contents)**
+
+
+## Folder Structure
