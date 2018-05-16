@@ -77,7 +77,7 @@ npm run build:watch
 
 Our grid system was forked from bootstrap 3 and uses the same classes for page layout.
 
-* Rows must be placed within a .container (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
+* Rows must be placed within a ```css .container``` (fixed-width) or .container-fluid (full-width) for proper alignment and padding.
 * Use rows to create horizontal groups of columns.
 * Content should be placed within columns, and only columns may be immediate children of rows.
 * Predefined grid classes like .row and .col-xs-4 are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.
@@ -89,6 +89,8 @@ Our grid system was forked from bootstrap 3 and uses the same classes for page l
 
 Avaliable classes:
 
+- .container
+- .row
 - .col-xs-1, .col-xs-2, .col-xs-3, ..., .col-xs-12
 - .col-sm-1, .col-sm-2, .col-sm-3, ..., .col-sm-12
 - .col-md-1, .col-md-2, .col-md-3, ..., .col-md-12
