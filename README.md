@@ -68,7 +68,9 @@ npm run build:watch
 
 ### Digital Experience Style Base
 
-...
+A library created by Amdocs core team which includes a set of ready-to-use mixins and html components.
+
+** !! DO NOT EDIT THIS FOLDER !! **
 
 **[⬆ back to top](#table-of-contents)**
 
