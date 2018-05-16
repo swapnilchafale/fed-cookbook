@@ -3,7 +3,7 @@
 ## Table of Contents
 
 1. [Introduction](#introduction)
-    - [TBA](#introduction)
+    - [Installation](#installation)
 1. [HTML](#html)
     - [Grid](#grid)
     - [Page Structure](#page-structure)
@@ -26,9 +26,18 @@
     - [Extend directive](#extend-directive)
     - [Nested selectors](#nested-selectors)
 1. [Folder Structure](#folder-structure)
-    - [TBA](#folder-structure)
+    - [File Naming](#file-naming)
+    - [Sass](#sass-folder)
+    - [HTML](#html-folder)
+    - [Digital Experience Style Base](#digital-experience-style-base)
 
 ## Introduction
+
+### Installation
+
+...
+
+**[⬆ back to top](#table-of-contents)**
 
 ## HTML
 
@@ -67,7 +76,9 @@
 </html>
 ```
 
-(Todo: Update classes to match guidelines)
+(**Todo:** Update classes to match guidelines)
+
+**[⬆ back to top](#table-of-contents)**
 
 ## CSS Terminology
 
@@ -338,3 +349,17 @@ If you must use an ID selector in the first place (and you should really try not
 
 
 ## Folder Structure
+
+### File Naming
+
+...
+
+### Sass
+
+...
+
+### Digital Experience Style Base
+
+...
+
+**[⬆ back to top](#table-of-contents)**
