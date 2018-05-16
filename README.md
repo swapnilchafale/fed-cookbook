@@ -43,7 +43,7 @@
 </head>
 <body>
     <section class="ds-frame">
-    
+
         <div class="ds-frame-content">
             <!-- PLACEHOLDER FOR THE HEADER -->
 
@@ -66,6 +66,8 @@
 </body>
 </html>
 ```
+
+(Todo: Update classes to match guidelines)
 
 ## CSS Terminology
 
