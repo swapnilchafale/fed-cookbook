@@ -135,8 +135,10 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
   <section class="ds-frame">
     <!-- PLACEHOLDER FOR THE HEADER -->
     
+    <!-- ds-frame-content -->
     <div class="ds-frame-content">
       
+      <!-- ds-checkout -->
       <div class="ds-checkout">
         
         <!-- container -->
@@ -144,7 +146,8 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 
           <!-- row -->
           <div class="row">
-
+            
+            <!-- column -->
             <div class="col-md-8">
               <!-- custom component -->
               <div class="ds-checkout-personal-info">
@@ -152,7 +155,9 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
               </div>
               <!-- /custom component -->
             </div>
+            <!-- /column -->
 
+            <!-- column -->
             <div class="col-md-4">
               <!-- custom component -->
               <div class="ds-cart-prices">
@@ -160,16 +165,17 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
               </div>
               <!-- /custom component -->
             </div>
-            
+            <!-- /column -->
+
           </div>
           <!-- /row -->
-
         </div>
         <!-- /container -->
-
       </div>
+      <!-- /ds-checkout -->
 
     </div>
+    <!-- /ds-frame-content -->
 
     <!-- PLACEHOLDER FOR THE FOOTER -->
   </section>
