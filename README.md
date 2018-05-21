@@ -112,7 +112,7 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 * Directly bellow ```.ds-frame``` we add a ```.ds-frame-content```
 * Your custom page code goes inside ```.ds-frame-content``` 
 
-**Example:**
+**Page Template:**
 
 ```html
 <body>
@@ -121,11 +121,58 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
         <!-- PLACEHOLDER FOR THE HEADER -->
         
         <div class="ds-frame-content">
-            <!-- YOUR CODE GOES HERE -->
         </div>
 
         <!-- PLACEHOLDER FOR THE FOOTER -->
     </section>
+</body>
+```
+
+**Example:**
+
+```html
+<body>
+  <section class="ds-frame">
+    <!-- PLACEHOLDER FOR THE HEADER -->
+    
+    <div class="ds-frame-content">
+      
+      <div class="ds-checkout">
+        
+        <!-- container -->
+        <div class="container">
+
+          <!-- row -->
+          <div class="row">
+
+            <div class="col-md-8">
+              <!-- custom component -->
+              <div class="ds-checkout-personal-info">
+                ...
+              </div>
+              <!-- /custom component -->
+            </div>
+
+            <div class="col-md-4">
+              <!-- custom component -->
+              <div class="ds-cart-prices">
+                ...
+              </div>
+              <!-- /custom component -->
+            </div>
+            
+          </div>
+          <!-- /row -->
+
+        </div>
+        <!-- /container -->
+
+      </div>
+
+    </div>
+
+    <!-- PLACEHOLDER FOR THE FOOTER -->
+  </section>
 </body>
 ```
 
