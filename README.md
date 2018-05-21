@@ -32,6 +32,9 @@
     - [Mobile First](#mobile-first)
     - [Break Points](#break-points)
     - [Ordering](#media-queries-ordering)
+1. [Project Utilities](#project-utilities)
+    - [Mixins](#global-mixins)
+    - [Variables](#global-variables)
 
 ## Introduction
 
@@ -491,5 +494,17 @@ Use media queries at the end of your Sass file.
     }
 }
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Project Utilities
+
+### Global Mixins
+
+(TBA)
+
+### Global Variables
+
+(TBA)
 
 **[⬆ back to top](#table-of-contents)**
