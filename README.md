@@ -136,7 +136,7 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 
     <!-- header component -->
     <header class="ds-frame-header">
-    ...
+      ...
     </header>
     <!-- /header component -->
     
