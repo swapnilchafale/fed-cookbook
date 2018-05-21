@@ -12,6 +12,7 @@
     - [Digital Experience Style Base](#digital-experience-style-base)
 1. [HTML](#html)
     - [New Page Template](#new-page-template)
+    - [Full Page Example](#full-page-example)
 1. [CSS](#css)
     - [Formatting](#formatting)
     - [Comments](#comments)
@@ -115,8 +116,6 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 * Directly bellow ```.ds-frame``` we add a ```.ds-frame-content```
 * Your custom page code goes inside ```.ds-frame-content``` 
 
-**Page Template:**
-
 ```html
 <body>
   
@@ -131,7 +130,12 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 </body>
 ```
 
-**Example:**
+**Class Behavior:**
+
+```.ds-frame``` - Full width (100% of screen width)\
+```.ds-frame-content``` - Limited width and screen centered (```margin: 0 auto;```)
+
+### Full Page Example
 
 ```html
 <body>
@@ -194,12 +198,6 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
   </section>
 </body>
 ```
-
-**Class Behavior:**
-
-```.ds-frame``` - Full width (100% of screen width)\
-```.ds-frame-content``` - Limited width and screen centered (```margin: 0 auto;```)
-
 
 **[⬆ back to top](#table-of-contents)**
 
