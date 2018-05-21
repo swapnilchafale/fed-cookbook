@@ -139,7 +139,9 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 
 ```html
 <body>
-  <section class="ds-frame">
+  
+  <!-- ds-frame -->  
+  <section class="ds-frame ds-checkout">
 
     <!-- header component -->
     <header class="ds-frame-header">
@@ -150,41 +152,36 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
     <!-- ds-frame-content -->
     <div class="ds-frame-content">
       
-      <!-- ds-checkout -->
-      <div class="ds-checkout">
-        
-        <!-- container -->
-        <div class="container">
+      <!-- container -->
+      <div class="container">
 
-          <!-- row -->
-          <div class="row">
-            
-            <!-- column -->
-            <div class="col-md-8">
-              <!-- custom component -->
-              <div class="ds-checkout-personal-info">
-                ...
-              </div>
-              <!-- /custom component -->
+        <!-- row -->
+        <div class="row">
+          
+          <!-- column -->
+          <div class="col-md-8">
+            <!-- custom component -->
+            <div class="ds-checkout-personal-info">
+              ...
             </div>
-            <!-- /column -->
-
-            <!-- column -->
-            <div class="col-md-4">
-              <!-- custom component -->
-              <div class="ds-cart-prices">
-                ...
-              </div>
-              <!-- /custom component -->
-            </div>
-            <!-- /column -->
-
+            <!-- /custom component -->
           </div>
-          <!-- /row -->
+          <!-- /column -->
+
+          <!-- column -->
+          <div class="col-md-4">
+            <!-- custom component -->
+            <div class="ds-cart-prices">
+              ...
+            </div>
+            <!-- /custom component -->
+          </div>
+          <!-- /column -->
+
         </div>
-        <!-- /container -->
+        <!-- /row -->
       </div>
-      <!-- /ds-checkout -->
+      <!-- /container -->
 
     </div>
     <!-- /ds-frame-content -->
@@ -196,8 +193,12 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
     <!-- /footer component -->
 
   </section>
+  <!-- /ds-frame -->  
+
 </body>
 ```
+
+* For page specific styles add the page class to ```.ds-frame```. In the example above, we added ```.ds-checkout```.
 
 **[⬆ back to top](#table-of-contents)**
 
