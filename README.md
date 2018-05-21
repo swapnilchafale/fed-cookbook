@@ -92,7 +92,7 @@ Only edit files on **self service** folder:
 
 ### HTML Folder
 
-* pages - complete pages including layout and built from components and elements
+* pages - complete pages including layout and built from components and elements (TBD)
 * components - complex components, such as: cart, forms, etc.
 * elements - small reusable components, such: buttons, checkboxes, radio buttons, switch, etc.
 
@@ -112,12 +112,15 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 * Directly bellow ```.ds-frame``` we add a ```.ds-frame-content```
 * Your custom page code goes inside ```.ds-frame-content``` 
 
+**Example:**
+
 ```html
 <body>
+  
     <section class="ds-frame">
+        <!-- PLACEHOLDER FOR THE HEADER -->
+        
         <div class="ds-frame-content">
-            <!-- PLACEHOLDER FOR THE HEADER -->
-
             <!-- YOUR CODE GOES HERE -->
         </div>
 
@@ -126,7 +129,11 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 </body>
 ```
 
-(**Todo:** Update classes to match guidelines)
+**Class Behavior:**
+
+```.ds-frame``` - Full width (100% of screen width)\
+```.ds-frame-content``` - Limited width and screen centered (```margin: 0 auto;```)
+
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -136,8 +143,8 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 
 * Use hards tabs (4 spaces) for indentation
 * Use [BEM methodology](#bem)
-* Prefer dashes over camelCasing in class names.
-  * Underscores and PascalCasing are okay if you are using BEM (see OOCSS and BEM below).
+* Use dashes in class names
+* Don't use camelCasing or PascalCasing in class names
 * Do not use ID selectors
 * Avoid attaching classes to elements in your stylesheet (i.e. don’t do div.header or h1.title)
 * When using multiple selectors in a rule declaration, give each selector its own line.
@@ -197,19 +204,17 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
   * CSS Trick's [BEM 101](https://css-tricks.com/bem-101/)
   * Harry Roberts' [introduction to BEM](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 
-We recommend a variant of BEM with PascalCased “blocks”, which works particularly well when combined with components (e.g. React). Underscores and dashes are still used for modifiers and children.
-
 **Example**
 
 ```jsx
 // ListingCard.jsx
 function ListingCard() {
   return (
-    <article class="ListingCard ListingCard--featured">
+    <article class="listing-card listing-card--featured">
 
-      <h1 class="ListingCard__title">Adorable 2BR in the sunny Mission</h1>
+      <h1 class="listing-card__title">Adorable 2BR in the sunny Mission</h1>
 
-      <div class="ListingCard__content">
+      <div class="listing-card__content">
         <p>Vestibulum id ligula porta felis euismod semper.</p>
       </div>
 
@@ -219,33 +224,23 @@ function ListingCard() {
 ```
 
 ```sass
-/* ListingCard.scss */
-.ListingCard { 
+/* listing-card.scss */
+.listing-card { 
     &--featured { }
     &__title { }
     &__content { }
 }
 ```
 
-  * `.ListingCard` is the “block” and represents the higher-level component
-  * `.ListingCard__title` is an “element” and represents a descendant of `.ListingCard` that helps compose the block as a whole.
-  * `.ListingCard--featured` is a “modifier” and represents a different state or variation on the `.ListingCard` block.
+  * `.listing-card` is the “block” and represents the higher-level component
+  * `.listing-card__title` is an “element” and represents a descendant of `.listing-card` that helps compose the block as a whole.
+  * `.listing-card--featured` is a “modifier” and represents a different state or variation on the `.listing-card` block.
 
 ### ID selectors
 
 While it is possible to select elements by ID in CSS, it should generally be considered an anti-pattern. ID selectors introduce an unnecessarily high level of [specificity](https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity) to your rule declarations, and they are not reusable.
 
 For more on this subject, read [CSS Wizardry's article](http://csswizardry.com/2014/07/hacks-for-dealing-with-specificity/) on dealing with specificity.
-
-### JavaScript hooks
-
-Avoid binding to the same class in both your CSS and JavaScript. Conflating the two often leads to, at a minimum, time wasted during refactoring when a developer must cross-reference each class they are changing, and at its worst, developers being afraid to make changes for fear of breaking functionality.
-
-We recommend creating JavaScript-specific classes to bind to, prefixed with `.js-`:
-
-```html
-<button class="btn btn-primary js-request-to-book">Request to Book</button>
-```
 
 ### Border
 
@@ -278,32 +273,7 @@ Use `0` instead of `none` to specify that a style has no border.
 
 ### Ordering of property declarations
 
-1. Property declarations
-
-    List all standard property declarations, anything that isn't an `@include` or a nested selector.
-
-    ```scss
-    .btn--green {
-      background: green;
-      font-weight: bold;
-      // ...
-    }
-    ```
-
-2. `@include` declarations
-
-    Grouping `@include`s at the end makes it easier to read the entire selector.
-
-    ```scss
-    .btn--green {
-      background: green;
-      font-weight: bold;
-      @include transition(background 0.5s ease);
-      // ...
-    }
-    ```
-
-3. Nested selectors
+1. Nested selectors
 
     Nested selectors, _if necessary_, go last, and nothing goes after them. Add whitespace between your rule declarations and nested selectors, as well as between adjacent nested selectors. Apply the same guidelines as above to your nested selectors.
 
@@ -322,6 +292,8 @@ Use `0` instead of `none` to specify that a style has no border.
 ### Variables
 
 Prefer dash-cased variable names (e.g. `$my-variable`) over camelCased or snake_cased variable names. It is acceptable to prefix variable names that are intended to be used only within the same file with an underscore (e.g. `$_my-variable`).
+
+TODO: Extend on when to use variables.
 
 ### Mixins
 
@@ -367,7 +339,7 @@ Our grid system was forked from bootstrap 3 and uses the same classes for page l
 * Rows must be placed within a ```.container``` (fixed-width) or ```.container-fluid``` (full-width) for proper alignment and padding.
 * Use rows to create horizontal groups of columns.
 * Content should be placed within columns, and only columns may be immediate children of rows.
-* Predefined grid classes like ```.row``` and ```.col-xs-4``` are available for quickly making grid layouts. Less mixins can also be used for more semantic layouts.
+* Predefined grid classes like ```.row``` and ```.col-xs-4``` are available for quickly making grid layouts. Sass mixins can also be used for more semantic layouts.
 * Columns create gutters (gaps between column content) via padding. That padding is offset in rows for the first and last column via negative margin on ```.row```s.
 * The negative margin is why the examples below are outdented. It's so that content within grid columns is lined up with non-grid content.
 * Grid columns are created by specifying the number of twelve available columns you wish to span. For example, three equal columns would use three ```.col-xs-4```.
