@@ -133,7 +133,12 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 ```html
 <body>
   <section class="ds-frame">
-    <!-- PLACEHOLDER FOR THE HEADER -->
+
+    <!-- header component -->
+    <header class="ds-frame-header">
+    ...
+    </header>
+    <!-- /header component -->
     
     <!-- ds-frame-content -->
     <div class="ds-frame-content">
@@ -177,7 +182,12 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
     </div>
     <!-- /ds-frame-content -->
 
-    <!-- PLACEHOLDER FOR THE FOOTER -->
+    <!-- footer component -->
+    <footer class="ds-frame-header">
+      ...
+    </footer>
+    <!-- /footer component -->
+
   </section>
 </body>
 ```
