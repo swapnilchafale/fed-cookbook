@@ -113,16 +113,23 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
 ### New Page Template
 
 * All pages need to include ```.ds-frame``` on the root element.
-* Directly bellow ```.ds-frame``` we add a ```.ds-frame-content```
-* Your custom page code goes inside ```.ds-frame-content``` 
+* Directly bellow ```.ds-frame``` we add a ```.ds-frame-default```
+* Directly bellow ```.ds-frame``` we add a ```.ds-frame-main```
+* Your custom page code goes inside ```.ds-frame-content```and```.ds-frame-main```
 
 ```html
 <body>
   
     <section class="ds-frame">
         <!-- PLACEHOLDER FOR THE HEADER -->
-        
-        <div class="ds-frame-content">
+       
+    <!-- For Grey background component -->
+        <div class="ds-frame-default">
+    
+        </div>
+     <!-- For white white component -->
+        <div class="ds-frame-main">
+    
         </div>
 
         <!-- PLACEHOLDER FOR THE FOOTER -->
@@ -153,10 +160,10 @@ A library created by Amdocs core team which includes a set of ready-to-use mixin
     <div class="ds-frame-content">
       
       <!-- container -->
-      <div class="container">
+      <div class="ds-container">
 
         <!-- row -->
-        <div class="row">
+        <div class="ds-row">
           
           <!-- column -->
           <div class="col-md-8">
